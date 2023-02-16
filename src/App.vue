@@ -1,9 +1,8 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/vente">vente</router-link> |
-    <router-link to="/login">Login</router-link> |
-    <router-link to="/register">Register</router-link>
+    <router-link to="/product">Product</router-link> |
+    <router-link to="/productlist">ProductList</router-link> |
   </nav>
   <router-view />
 </template>
@@ -27,7 +26,6 @@ export default {
   color: #2c3e50;
 }
 body {
-  background-color: #565656;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -38,7 +36,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 nav a.router-link-exact-active {
