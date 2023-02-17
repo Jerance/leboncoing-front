@@ -26,7 +26,7 @@ export default {
   }),
   mounted() {
     axios
-      .get("http://localhost:8000/products?skip=0&limit=100", {
+      .get("http://192.168.64.9:8000/products?skip=0&limit=100", {
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "*",
@@ -38,7 +38,7 @@ export default {
   methods: {
     DeleteProduct(id) {
       axios
-        .delete("http://localhost:8000/products/" + id, {
+        .delete("http://192.168.64.9:8000/products/" + id, {
           headers: {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "*",
